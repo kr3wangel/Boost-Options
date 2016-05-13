@@ -89,7 +89,7 @@ add_action( 'admin_init', 'add_capability');
 /* Hide Stream and Boost-WP from plugin library */
 function hide_plugin_boosttricks() {
   global $wp_list_table;
-  $hidearr = array('stream/stream.php','boost-wp/boost-wp.php');
+  $hidearr = array('stream/stream.php','boost-options/boost-options.php');
   $myplugins = $wp_list_table->items;
   foreach ($myplugins as $key => $val) {
     if (in_array($key,$hidearr)) {
