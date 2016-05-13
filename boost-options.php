@@ -1,11 +1,11 @@
 <?php
 /**
  * Plugin Name: Boost Options
- * Plugin URI: https://github.com/kr3wangel/Boost-Options.git
+ * Plugin URI: http://boostcorp.com
  * Description: Adds custom functions to add a new user role, hide itself from the plugin menu, 
  * Author: Angel Herrera
- * Author URI: http://boostability.com
- * Version: 1.0
+ * Author URI: http://boostcorp.com
+ * Version: 0.1.0
  */	
 
 /* Create new user */	
