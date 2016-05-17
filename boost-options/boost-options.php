@@ -5,11 +5,11 @@
  * Description: Adds custom functions to add a new user role, hide itself from the plugin menu, 
  * Author: Angel Herrera
  * Author URI: http://boostability.com
- * Version: 1.0
+ * Version: 1.1
  */	
 
-/* Create new user */	
-$result = add_role( 'dexadmin', __('Dex Admin' ),
+/* Create custom dex role */	
+$result = add_role( 'dexadmin', __('Admin' ),
  
 array(
  
@@ -75,7 +75,7 @@ array(
 );
 
 
-/* Add Stream Cap to Admin role */
+/* Add 'Stream' cap to Administrator role */
 function add_capability() {
     // gets the author role
     $role = get_role( 'administrator' );
@@ -86,7 +86,7 @@ add_action( 'admin_init', 'add_capability');
 
 
 
-/* Hide Stream and Boost-WP from plugin library */
+/* Hide Stream and Boost-Options from plugin library */
 function hide_plugin_boosttricks() {
   global $wp_list_table;
   $hidearr = array('stream/stream.php','boost-options/boost-options.php');
